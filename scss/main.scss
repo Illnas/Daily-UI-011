@@ -1,0 +1,81 @@
+@import "./config";
+
+
+body {
+    @include flexCenter(row);
+    height: 100vh;
+}
+
+.card-success {
+    margin: 0 20px;
+    width: 200px;
+    height: 400px;
+    border: 3px solid rgb(126, 255, 6);
+    background-color: rgb(162, 252, 79);
+    @include flexCenter(column);
+    img {
+        margin-bottom: 50px;
+        border: 1px solid #fff;
+        width: 150px;
+        height: 150px;
+    }
+    p {
+        margin: 0 10px 60px 10px;  
+        font-size: 20px;
+    }
+}
+
+.card-failure {
+    margin: 0 20px;
+    width: 200px;
+    height: 400px;
+    border: 3px solid rgb(255, 44, 44);
+    background-color: rgb(255, 125, 74);
+    @include flexCenter(column);
+    img {
+        margin-bottom: 50px;
+        border: 1px solid #fff;
+        width: 150px;
+        height: 150px;
+    }
+    p {
+        margin: 0 10px 60px 10px;  
+        font-size: 20px;
+    }
+}
+
+@include media-sm  {
+    .card-success {
+        margin: 0 10px;
+        width: 200px;
+        height: 400px;
+        img {
+            margin-bottom: 50px;
+            border: 1px solid #fff;
+            width: 100px;
+            height: 100px;
+        }
+        p {
+            text-align: justify;
+            margin: 0 10px 60px 10px;  
+            font-size: 15px;
+        }
+    }
+
+    .card-failure {
+        margin: 0 10px;
+        width: 200px;
+        height: 400px;
+        img {
+            margin-bottom: 50px;
+            border: 1px solid #fff;
+            width: 100px;
+            height: 100px;
+        }
+        p {
+            text-align: justify;
+            margin: 0 10px 60px 10px;  
+            font-size: 15px;
+        }
+    } 
+}
